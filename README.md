@@ -1,8 +1,8 @@
-# Concept Drift Detection MLOps Pipeline
+# Concept Drift Detection MLOps Pipeline(Ongoing)
 
 An end-to-end MLOps pipeline for detecting concept drift in machine learning models with automatic retraining capabilities. This project demonstrates a complete workflow from model training to deployment with drift monitoring.
 
-## 🎯 Project Overview
+##  Project Overview
 
 This pipeline monitors machine learning model performance in production and detects when the underlying data distribution changes (concept drift). When drift is detected, the system automatically retrains the model on new data to maintain performance.
 
@@ -15,7 +15,7 @@ This pipeline monitors machine learning model performance in production and dete
 - **Random Forest Classifier** as the base model
 - **Data Preprocessing** with one-hot encoding and missing value handling
 
-## 📊 Dataset
+##  Dataset
 
 The project uses the Airline Customer Satisfaction dataset with the following features:
 
@@ -25,7 +25,7 @@ The project uses the Airline Customer Satisfaction dataset with the following fe
 - **Delay information**: Departure/Arrival delays
 - **Target variable**: Customer satisfaction (satisfied/neutral or dissatisfied)
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 ┌─────────────────┐
@@ -75,7 +75,7 @@ The project uses the Airline Customer Satisfaction dataset with the following fe
 └─────────────────┘
 ```
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -154,7 +154,7 @@ Response:
 }
 ```
 
-## 🔍 Concept Drift Detection
+##  Concept Drift Detection
 
 ### How It Works
 
@@ -186,7 +186,7 @@ The project includes `drifted_data.csv` which simulates concept drift by:
 
 This demonstrates the drift detection system in action.
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 .
@@ -207,7 +207,7 @@ This demonstrates the drift detection system in action.
 - **Target**: Binary classification (satisfied vs. neutral/dissatisfied)
 - **Performance**: Baseline accuracy on training data
 
-## 📈 MLOps Pipeline Stages
+## MLOps Pipeline Stages
 
 1. **Data Ingestion**: Load training and test datasets
 2. **Preprocessing**: Handle missing values, encode categorical variables
@@ -219,7 +219,7 @@ This demonstrates the drift detection system in action.
 8. **Model Retraining**: Automatic retraining when drift detected
 9. **Model Update**: Deploy new model version
 
-## 🔄 Continuous Improvement
+##  Continuous Improvement
 
 The pipeline supports continuous model improvement through:
 
@@ -228,39 +228,15 @@ The pipeline supports continuous model improvement through:
 - **Model versioning** (model.pkl, model_v2.pkl, etc.)
 - **API hot-reload** for seamless model updates
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - **Python**: Core programming language
 - **FastAPI**: Web framework for API
-- **Uvicorn**: ASGI server
 - **Pandas**: Data manipulation
 - **Scikit-learn**: Machine learning library
 - **SciPy**: Statistical tests (KS test)
 - **Pickle**: Model serialization
 
-## 📝 Notes
 
-- The notebook contains hardcoded file paths that need to be updated for your environment
-- The API expects all features to be provided in the prediction request
-- Model retraining is triggered automatically when drift is detected
-- The current implementation uses a simple threshold (p-value < 0.05) for drift detection
 
-## 🤝 Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📄 License
-
-This project is open source and available under the MIT License.
-
-## 👤 Author
-
-**Jess33B**
-
-- GitHub: [@Jess33B](https://github.com/Jess33B)
-
-## 🙏 Acknowledgments
-
-- Airline Customer Satisfaction dataset from Kaggle
-- Scikit-learn documentation
-- FastAPI documentation
