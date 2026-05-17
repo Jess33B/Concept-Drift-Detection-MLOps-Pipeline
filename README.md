@@ -199,7 +199,7 @@ This demonstrates the drift detection system in action.
 └── README.md                 # This file
 ```
 
-## 🔧 Model Details
+##  Model Details
 
 - **Algorithm**: Random Forest Classifier
 - **Training Data**: Airline customer satisfaction dataset
